@@ -20,7 +20,7 @@ USER 1001
 RUN npm install -g verdaccio \
   && npm link verdaccio
 
-EXPOSE 8080
+EXPOSE 4873
 
 ENTRYPOINT ["/verdaccio/verdaccio", "--config", "/verdaccio/config.yaml", "--listen", "http://0.0.0.0:4873"]
 
